@@ -1,2 +1,6 @@
+# PAGES:
+
+# URL Repositório: https://github.com/Fiap-Checkpoints/HAL9000-CP3.git
+
 # Integrantes
 - Rafael Klanfer Nunes. RM 99791
