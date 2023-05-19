@@ -2,13 +2,13 @@ const inputNome = document.querySelector("#idNome");
 const inputSobrenome = document.querySelector("#idSobrenome");
 const inputEmail = document.querySelector("#idEmail");
 const inputSenha = document.querySelector("#idSenha");
-// const inputSenha2 = document.querySelector("#");
+const inputSenha2 = document.querySelector("#idConfirmSenha");
 
 const erroNome = document.querySelector("#idErrorNome");
 const erroSobrenome = document.querySelector("#idErrorSobrenome");
 const erroEmail = document.querySelector("#idErrorEmail");
 const erroSenha = document.querySelector("#idErrorSenha");
-// const erroSenha2 = document.querySelector("#");
+const erroSenha2 = document.querySelector("#idErrorConfirmSenha");
 
 
 
@@ -86,6 +86,23 @@ inputSenha.addEventListener("blur", ()=>{
       }else{
         erroSenha.textContent = ""
           inputSenha.setAttribute("style", "outline-color: green;");
+      }
+    }
+});
+
+inputSenha2.addEventListener("blur", ()=>{
+  let texto = inputSenha2.value;
+  console.log(texto)
+  if (texto == "") {
+    erroSenha2.textContent = "* A senha nao pode estar vazio"
+      inputSenha2.setAttribute("style", "outline-color: red;");
+    } else{
+      if(texto.length < 5){
+        erroSenha2.textContent = "* A senha precisa ter 5 ou mais caracteres"  
+        inputSenha2.setAttribute("style", "outline-color: red;");
+      }else{
+        erroSenha2.textContent = ""
+          inputSenha2.setAttribute("style", "outline-color: green;");
       }
     }
 });
