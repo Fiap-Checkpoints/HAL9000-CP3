@@ -12,7 +12,7 @@
 }
 
 body{
-    background: #d6d6d6;
+    background: #edffee;
 }
 
 .main-cadastro {
@@ -22,6 +22,24 @@ body{
     height: 100vh;
 }
 
+.text-cadastro {
+    font-size: 3rem;
+    font-weight: 600;
+    
+}
+
+
+.field-box div{
+    margin: 1.9vh;
+}
+
+.field-box label{
+    font-size: 1.8rem;
+}
+
+.field-box a{
+    font-size: 1.3rem;
+}
 
 
 
