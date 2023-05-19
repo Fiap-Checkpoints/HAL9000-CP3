@@ -12,7 +12,7 @@
 }
 
 body{
-    background: #005ebb;
+    background: linear-gradient(327deg, blue 20%, #c95cff);
 }
 
 .main-cadastro {
@@ -66,7 +66,6 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
-
 
 
 
