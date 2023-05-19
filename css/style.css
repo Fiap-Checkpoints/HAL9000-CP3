@@ -12,7 +12,7 @@
 }
 
 body{
-    background: #edffee;
+    background: #005ebb;
 }
 
 .main-cadastro {
@@ -22,18 +22,31 @@ body{
     height: 100vh;
 }
 
-.text-cadastro {
-    font-size: 3rem;
-    font-weight: 600;
-    
+.form-cadastro{
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 25vw;
 }
 
+.field-box{
+    border: none;
+}
 
 .field-box div{
-    margin: 1.9vh;
+    display: flex;
+    margin: 1.7vh;
+    flex-direction: column;
 }
 
+.text-cadastro {
+    color:#002344;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 2vh;
+}
 .field-box label{
+    color:#002344;
     font-size: 1.8rem;
 }
 
