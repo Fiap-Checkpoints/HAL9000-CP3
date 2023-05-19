@@ -1,11 +1,13 @@
 const inputNome = document.querySelector("#idNome");
-// const inputSobrenome = document.querySelector("#");
+
+const inputSobrenome = document.querySelector("#");
+
 const inputEmail = document.querySelector("#idEmail");
 // const inputSenha = document.querySelector("#");
 // const inputSenha2 = document.querySelector("#");
 
 const erroNome = document.querySelector("#idErrorNome");
-// const erroSobrenome = document.querySelector("#");
+const erroSobrenome = document.querySelector("#");
 const erroEmail = document.querySelector("#idErrorEmail");
 // const erroSenha = document.querySelector("#");
 // const erroSenha2 = document.querySelector("#");
@@ -33,14 +35,9 @@ inputEmail.addEventListener("blur", ()=>{
               erroEmail.textContent = "* O email precisa ser um email valido (Conter @)" 
               inputEmail.setAttribute("style", "outline-color: red;");
             }
-        }
-       
+        }   
       }
-
-
-
 });
-
 inputNome.addEventListener("blur", ()=>{
   let texto = inputNome.value;
   console.log(texto)
@@ -56,9 +53,5 @@ inputNome.addEventListener("blur", ()=>{
           erroNome.textContent = ""
           inputNome.setAttribute("style", "outline-color: green;");
       }
-     
     }
-
-
-
 });
