@@ -1,11 +1,13 @@
-// const inputNome = document.querySelector("#");
-// const inputSobrenome = document.querySelector("#");
+const inputNome = document.querySelector("#idNome");
+
+const inputSobrenome = document.querySelector("#idSobrenome");
+
 const inputEmail = document.querySelector("#idEmail");
 // const inputSenha = document.querySelector("#");
 // const inputSenha2 = document.querySelector("#");
 
-// const erroNome = document.querySelector("#");
-// const erroSobrenome = document.querySelector("#");
+const erroNome = document.querySelector("#idErrorNome");
+const erroSobrenome = document.querySelector("#idErrorSobrenome");
 const erroEmail = document.querySelector("#idErrorEmail");
 // const erroSenha = document.querySelector("#");
 // const erroSenha2 = document.querySelector("#");
@@ -33,11 +35,40 @@ inputEmail.addEventListener("blur", ()=>{
               erroEmail.textContent = "* O email precisa ser um email valido (Conter @)" 
               inputEmail.setAttribute("style", "outline-color: red;");
             }
-        }
-       
+        }   
       }
-
-
-
+});
+inputNome.addEventListener("blur", ()=>{
+  let texto = inputNome.value;
+  console.log(texto)
+  if (texto == "") {
+      //Campo vazio
+      erroNome.textContent = "* O nome nao pode estar vazio"
+      inputNome.setAttribute("style", "outline-color: red;");
+    } else{
+      if(texto.length < 5){
+        erroNome.textContent = "* O nome precisa ter 5 ou mais caracteres"  
+        inputNome.setAttribute("style", "outline-color: red;");
+      }else{
+          erroNome.textContent = ""
+          inputNome.setAttribute("style", "outline-color: green;");
+      }
+    }
 });
 
+inputSobrenome.addEventListener("blur", ()=>{
+  let texto = inputSobrenome.value;
+  console.log(texto)
+  if (texto == "") {
+      erroSobrenome.textContent = "* O sobrenom nao pode estar vazio"
+      inputSobrenome.setAttribute("style", "outline-color: red;");
+    } else{
+      if(texto.length < 5){
+        erroSobrenome.textContent = "* O sobrenom precisa ter 5 ou mais caracteres"  
+        inputSobrenome.setAttribute("style", "outline-color: red;");
+      }else{
+          erroSobrenome.textContent = ""
+          inputSobrenome.setAttribute("style", "outline-color: green;");
+      }
+    }
+});
