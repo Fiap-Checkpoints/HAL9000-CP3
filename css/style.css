@@ -34,8 +34,13 @@ body{
 
 .field-box div{
     display: flex;
-    margin: 1.7vh;
+    margin: 1vh;
     flex-direction: column;
+}
+
+.field-box input{
+    margin: 1.2vh;
+    height: 4.5vh;
 }
 
 .text-cadastro {
@@ -54,6 +59,10 @@ body{
     font-size: 1.3rem;
 }
 
+.field-box .div-buttons{
+    display: flex;
+    flex-direction: row;
+}
 
 
 
