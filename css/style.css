@@ -27,6 +27,7 @@ body{
     border-radius: 8px;
     width: 30vw;
     padding: 3rem 1%;
+    box-shadow: 16px 30px 36px -3px rgba(0,2,0,0.5);
 }
 
 .field-box{
@@ -67,7 +68,6 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
-
 
 
 
