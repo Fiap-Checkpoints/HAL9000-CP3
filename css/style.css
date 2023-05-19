@@ -55,13 +55,16 @@ body{
     font-size: 1.8rem;
 }
 
-.field-box a{
+.field-box p{
     font-size: 1.3rem;
+    margin: -1vh 0 1.4vh;
+    text-align: center;
 }
 
 .field-box .div-buttons{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 
