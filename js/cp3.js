@@ -1,13 +1,13 @@
 const inputNome = document.querySelector("#idNome");
 
-const inputSobrenome = document.querySelector("#");
+const inputSobrenome = document.querySelector("#idSobrenome");
 
 const inputEmail = document.querySelector("#idEmail");
 // const inputSenha = document.querySelector("#");
 // const inputSenha2 = document.querySelector("#");
 
 const erroNome = document.querySelector("#idErrorNome");
-const erroSobrenome = document.querySelector("#");
+const erroSobrenome = document.querySelector("#idErrorSobrenome");
 const erroEmail = document.querySelector("#idErrorEmail");
 // const erroSenha = document.querySelector("#");
 // const erroSenha2 = document.querySelector("#");
@@ -52,6 +52,23 @@ inputNome.addEventListener("blur", ()=>{
       }else{
           erroNome.textContent = ""
           inputNome.setAttribute("style", "outline-color: green;");
+      }
+    }
+});
+
+inputSobrenome.addEventListener("blur", ()=>{
+  let texto = inputSobrenome.value;
+  console.log(texto)
+  if (texto == "") {
+      erroSobrenome.textContent = "* O sobrenom nao pode estar vazio"
+      inputSobrenome.setAttribute("style", "outline-color: red;");
+    } else{
+      if(texto.length < 5){
+        erroSobrenome.textContent = "* O sobrenom precisa ter 5 ou mais caracteres"  
+        inputSobrenome.setAttribute("style", "outline-color: red;");
+      }else{
+          erroSobrenome.textContent = ""
+          inputSobrenome.setAttribute("style", "outline-color: green;");
       }
     }
 });
