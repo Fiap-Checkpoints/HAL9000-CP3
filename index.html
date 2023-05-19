@@ -10,72 +10,72 @@
     <title>Entrar</title>
   </head>
   <body>
-    <div>
-      <form method="get">
-        <fieldset>
-          <legend>Cadastro</legend>
+    <div class="main-cadastro">
+      <form method="get" class="form-cadastro">
+        <fieldset class="field-box">
+          <legend class="text-cadastro">Cadastro</legend>
           <div>
-            <label for="idNome">Nome</label>
+            <label for="idNome">Nome: </label>
             <input
               type="text"
               name="Nome"
               id="idNome"
-              placeholder="Digite seu nome"
+              placeholder="   Digite seu nome"
             /><small id="idErrorNome" style="visibility: hidden"
               >Aqui aparecera a msg de erro</small
             >
           </div>
           <div>
-            <label for="idSobrenome">Sobrenome</label>
+            <label for="idSobrenome">Sobrenome: </label>
             <input
               type="text"
               name="Nome"
               id="idSobrenome"
-              placeholder="Digite seu sobrenome"
+              placeholder="   Digite seu sobrenome"
             /><small id="idErrorSobrenome" style="visibility: hidden"
               >Aqui aparecera a msg de erro</small
             >
           </div>
           <div>
-            <label for="idEmail">E-mail</label>
+            <label for="idEmail">E-mail: </label>
             <input
               type="text"
               name="Email"
               id="idEmail"
-              placeholder="Digite seu e-mail"
+              placeholder="   Digite seu e-mail"
             /><small id="idErrorEmail" style="visibility: hidden"
               >Aqui aparecera a msg de erro</small
             >
           </div>
           <div>
-            <label for="idSenha">Senha</label>
+            <label for="idSenha">Senha: </label>
             <input
               type="password"
               name="senha"
               id="idSenha"
-              placeholder="Digite sua senha"
+              placeholder="   Digite sua senha"
             /><small id="idErrorSenha" style="visibility: hidden"
               >Aqui aparecera a msg de erro</small
             >
           </div>
           <div>
-            <label for="idConfirmSenha">Confirme sua senha</label>
+            <label for="idConfirmSenha">Confirme sua senha: </label>
             <input
               type="confirmPassword"
               name="confirmPassword"
               id="idConfirmSenha"
-              placeholder="Confirme sua senha"
+              placeholder="   Confirme sua senha"
             /><small id="idErrorConfirmSenha" style="visibility: hidden"
               >Aqui aparecera a msg de erro</small
             >
           </div>
           <div>
-            <p><a href="#">Não tem cadastro ainda!!?</a></p>
+            <p><a href="#">Não tem cadastro ainda?</a></p>
           </div>
 
-          <div>
-            <button type="submit" id="btnSubmit">Entrar</button>
-            <button type="reset" id="btnLimpar">Limpar</button>
+          <div class="div-buttons">
+            <button type="submit" id="btnSubmit" class="btn-entrar">Entrar</button>
+            <button type="reset" id="btnLimpar" class="btn-limpar">Limpar</button>
           </div>
         </fieldset>
       </form>

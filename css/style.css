@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    font-size: 62.8%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: linear-gradient(327deg, blue 20%, #c95cff);
+}
+
+.main-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-cadastro{
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 30vw;
+    padding: 3rem 1%;
+    box-shadow: 16px 30px 36px -3px rgba(0,2,0,0.5);
+}
+
+.field-box{
+    border: none;
+}
+
+.field-box div{
+    display: flex;
+    margin: 1vh;
+    flex-direction: column;
+}
+
+.field-box input{
+    margin: 1.2vh;
+    height: 4.5vh;
+}
+
+.text-cadastro {
+    color:#002344;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 2vh;
+}
+.field-box label{
+    color:#002344;
+    font-size: 1.8rem;
+}
+
+.field-box p{
+    font-size: 1.3rem;
+    margin: -1vh 0 1.4vh;
+    text-align: center;
+}
+
+.field-box .div-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn-entrar{
+    font-size: 1.6rem;
+    color: #f0f0f0;
+    height: 5vh;
+    width: 10vw;
+    background-color: #6d44a3;
+    border: none;
+    border-radius: 3.5px;
+    cursor: pointer;
+}
+
+.btn-limpar{
+    font-size: 1.6rem;
+    color: #f0f0f0;
+    height: 5vh;
+    width: 10vw;
+    background-color: #6d44a3;
+    border: none;
+    border-radius: 3.5px;
+    cursor: pointer;
+}
+
+.btn-entrar:hover{
+    opacity: 0.85;
+}
+
+.btn-limpar:hover{
+    opacity: 0.85;
+}
