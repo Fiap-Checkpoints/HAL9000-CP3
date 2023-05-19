@@ -6,3 +6,4 @@
 - Rafael Klanfer Nunes. RM 99791
 - Pedro Henrique Couto Archilha. RM550450
 - Pedro Henrique Lourenço Rodrigues. RM98402
+- Diogo Dias Rodrigues Gallina. RM98605
