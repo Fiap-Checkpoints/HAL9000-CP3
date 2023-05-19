@@ -36,6 +36,7 @@ inputEmail.addEventListener("blur", ()=>{
         }   
       }
 });
+
 inputNome.addEventListener("blur", ()=>{
   let texto = inputNome.value;
   console.log(texto)
