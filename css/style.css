@@ -69,5 +69,32 @@ body{
     justify-content: space-around;
 }
 
+.btn-entrar{
+    font-size: 1.6rem;
+    color: #f0f0f0;
+    height: 5vh;
+    width: 10vw;
+    background-color: #6d44a3;
+    border: none;
+    border-radius: 3.5px;
+    cursor: pointer;
+}
 
+.btn-limpar{
+    font-size: 1.6rem;
+    color: #f0f0f0;
+    height: 5vh;
+    width: 10vw;
+    background-color: #6d44a3;
+    border: none;
+    border-radius: 3.5px;
+    cursor: pointer;
+}
 
+.btn-entrar:hover{
+    opacity: 0.85;
+}
+
+.btn-limpar:hover{
+    opacity: 0.85;
+}
