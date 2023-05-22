@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Importa arquivo css style.css -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/cp3.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/cp3.js" defer></script>
     <title>Entrar</title>
   </head>
   <body>
@@ -29,7 +29,7 @@
             <label for="idSobrenome">Sobrenome: </label>
             <input
               type="text"
-              name="Nome"
+              name="Sobrenome"
               id="idSobrenome"
               placeholder="   Digite seu sobrenome"
             /><small id="idErrorSobrenome" style="visibility: hidden"
@@ -61,7 +61,7 @@
           <div>
             <label for="idConfirmSenha">Confirme sua senha: </label>
             <input
-              type="confirmPassword"
+              type="password"
               name="confirmPassword"
               id="idConfirmSenha"
               placeholder="   Confirme sua senha"
@@ -77,6 +77,9 @@
             <button type="submit" id="btnSubmit" class="btn-entrar">Entrar</button>
             <button type="reset" id="btnLimpar" class="btn-limpar">Limpar</button>
           </div>
+
+          <button type="click" id="btnDark" class="btn-dark">DarkMode</button>
+
         </fieldset>
       </form>
     </div>

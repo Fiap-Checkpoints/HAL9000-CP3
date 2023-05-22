@@ -3,6 +3,7 @@
 # URL Repositório: https://github.com/Fiap-Checkpoints/HAL9000-CP3.git
 
 # Integrantes
+- Joao Dubas rm76153 * estava com problemas no meu git, fez commits com rafael.
 - Rafael Klanfer Nunes. RM 99791
 - Pedro Henrique Couto Archilha. RM550450
 - Pedro Henrique Lourenço Rodrigues. RM98402
