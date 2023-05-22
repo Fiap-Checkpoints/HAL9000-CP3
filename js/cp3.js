@@ -16,40 +16,44 @@ inputEmail.addEventListener("blur", ()=>{
     let texto = inputEmail.value;
     console.log(texto)
     if (texto == "") {
-        //Campo vazio
-        erroEmail.textContent = "* O email nao pode estar vazio"
+        erroEmail.setAttribute("style", "visibility: visible; color: red;");
+        erroEmail.textContent = "* O email não pode estar vazio"
         inputEmail.setAttribute("style", "outline-color: red;");
       } else{
         if(texto.length < 5){
+          erroEmail.setAttribute("style", "visibility: visible; color: red;");
           erroEmail.textContent = "* O email precisa ter 5 ou mais caracteres"  
           inputEmail.setAttribute("style", "outline-color: red;");
         }else{
           if (texto.includes("@")) {
             erroEmail.textContent = ""
+            erroEmail.setAttribute("style", "visibility: hidden; color: green;");
             inputEmail.setAttribute("style", "outline-color: green;");
             } else {
               //Campo sem @
-              console.log("O texto contém o caractere @");
+              erroEmail.setAttribute("style", "visibility: visible; color: red;");
               erroEmail.textContent = "* O email precisa ser um email valido (Conter @)" 
               inputEmail.setAttribute("style", "outline-color: red;");
             }
         }   
-      }
+    }
 });
 
 inputNome.addEventListener("blur", ()=>{
   let texto = inputNome.value;
   console.log(texto)
   if (texto == "") {
-      //Campo vazio
+      erroNome.setAttribute("style", "visibility: visible; color: red;");
       erroNome.textContent = "* O nome nao pode estar vazio"
       inputNome.setAttribute("style", "outline-color: red;");
     } else{
       if(texto.length < 5){
+        erroNome.setAttribute("style", "visibility: visible; color: red;");
         erroNome.textContent = "* O nome precisa ter 5 ou mais caracteres"  
         inputNome.setAttribute("style", "outline-color: red;");
       }else{
           erroNome.textContent = ""
+          erroNome.setAttribute("style", "visibility: hidden; color: green;");
           inputNome.setAttribute("style", "outline-color: green;");
       }
     }
@@ -59,50 +63,52 @@ inputSobrenome.addEventListener("blur", ()=>{
   let texto = inputSobrenome.value;
   console.log(texto)
   if (texto == "") {
-      erroSobrenome.textContent = "* O sobrenom nao pode estar vazio"
-      inputSobrenome.setAttribute("style", "outline-color: red;");
+    erroSobrenome.setAttribute("style", "visibility: visible; color: red;");
+    erroSobrenome.textContent = "* O sobrenome nao pode estar vazio"
+    inputSobrenome.setAttribute("style", "outline-color: red;");
     } else{
       if(texto.length < 5){
-        erroSobrenome.textContent = "* O sobrenom precisa ter 5 ou mais caracteres"  
+        erroSobrenome.setAttribute("style", "visibility: visible; color: red;");
+        erroSobrenome.textContent = "* O sobrenome precisa ter 5 ou mais caracteres"  
         inputSobrenome.setAttribute("style", "outline-color: red;");
       }else{
           erroSobrenome.textContent = ""
+          erroSobrenome.setAttribute("style", "visibility: hidden; color: green;");
           inputSobrenome.setAttribute("style", "outline-color: green;");
       }
     }
 });
 
-
 inputSenha.addEventListener("blur", ()=>{
   let texto = inputSenha.value;
   console.log(texto)
   if (texto == "") {
+    erroSenha.setAttribute("style", "visibility: visible; color: red;");
     erroSenha.textContent = "* A senha nao pode estar vazio"
-      inputSenha.setAttribute("style", "outline-color: red;");
+    inputSenha.setAttribute("style", "outline-color: red;");
     } else{
       if(texto.length < 5){
+        erroSenha.setAttribute("style", "visibility: visible; color: red;");
         erroSenha.textContent = "* A senha precisa ter 5 ou mais caracteres"  
         inputSenha.setAttribute("style", "outline-color: red;");
       }else{
         erroSenha.textContent = ""
-          inputSenha.setAttribute("style", "outline-color: green;");
+        erroSenha.setAttribute("style", "visibility: hidden; color: green;");
+        inputSenha.setAttribute("style", "outline-color: green;");
       }
     }
 });
 
 inputSenha2.addEventListener("blur", ()=>{
   let texto = inputSenha2.value;
-  console.log(texto)
-  if (texto == "") {
-    erroSenha2.textContent = "* A senha nao pode estar vazio"
-      inputSenha2.setAttribute("style", "outline-color: red;");
-    } else{
-      if(texto.length < 5){
-        erroSenha2.textContent = "* A senha precisa ter 5 ou mais caracteres"  
-        inputSenha2.setAttribute("style", "outline-color: red;");
-      }else{
-        erroSenha2.textContent = ""
-          inputSenha2.setAttribute("style", "outline-color: green;");
-      }
-    }
+  if (texto == inputSenha.value){
+    erroSenha2.textContent = ""
+    erroSenha2.setAttribute("style", "visibility: hidden; color: green;");
+    inputSenha2.setAttribute("style", "outline-color: red;");
+  }
+  else{
+    erroSenha2.setAttribute("style", "visibility: visible; color: red;");
+    erroSenha2.textContent = "* As senhas precisam ser iguais"
+    inputSenha2.setAttribute("style", "outline-color: red;");
+  }
 });
