@@ -67,7 +67,7 @@ inputSobrenome.addEventListener("blur", ()=>{
     erroSobrenome.textContent = "* O sobrenome não pode estar vazio!"
     inputSobrenome.setAttribute("style", "outline-color: red;");
     } else{
-      if(texto.length < 6 || texto.length > 8){
+      if(texto.length < 5){
         erroSobrenome.setAttribute("style", "visibility: visible; color: red;");
         erroSobrenome.textContent = "* O sobrenome precisa ter 5 ou mais caracteres!"  
         inputSobrenome.setAttribute("style", "outline-color: red;");
@@ -87,9 +87,9 @@ inputSenha.addEventListener("blur", ()=>{
     erroSenha.textContent = "* A senha não pode estar vazia!"
     inputSenha.setAttribute("style", "outline-color: red;");
     } else{
-      if(texto.length < 5){
+      if(texto.length < 6 || texto.length > 8){
         erroSenha.setAttribute("style", "visibility: visible; color: red;");
-        erroSenha.textContent = "* A senha precisa ter 5 ou mais caracteres"  
+        erroSenha.textContent = "* A senha precisa ter de 6 a 8 caracteres"  
         inputSenha.setAttribute("style", "outline-color: red;");
       }else{
         erroSenha.textContent = ""
@@ -104,7 +104,7 @@ inputSenha2.addEventListener("blur", ()=>{
   if (texto == inputSenha.value){
     erroSenha2.textContent = ""
     erroSenha2.setAttribute("style", "visibility: hidden; color: green;");
-    inputSenha2.setAttribute("style", "outline-color: red;");
+    inputSenha2.setAttribute("style", "outline-color: green;");
   }
   else{
     erroSenha2.setAttribute("style", "visibility: visible; color: red;");
