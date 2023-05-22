@@ -67,7 +67,7 @@ inputSobrenome.addEventListener("blur", ()=>{
     erroSobrenome.textContent = "* O sobrenome não pode estar vazio!"
     inputSobrenome.setAttribute("style", "outline-color: red;");
     } else{
-      if(texto.length < 5){
+      if(texto.length < 6 || texto.length > 8){
         erroSobrenome.setAttribute("style", "visibility: visible; color: red;");
         erroSobrenome.textContent = "* O sobrenome precisa ter 5 ou mais caracteres!"  
         inputSobrenome.setAttribute("style", "outline-color: red;");
