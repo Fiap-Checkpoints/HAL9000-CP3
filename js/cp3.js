@@ -17,12 +17,12 @@ inputEmail.addEventListener("blur", ()=>{
     console.log(texto)
     if (texto == "") {
         erroEmail.setAttribute("style", "visibility: visible; color: red;");
-        erroEmail.textContent = "* O email não pode estar vazio"
+        erroEmail.textContent = "* O e-mail não pode estar vazio!"
         inputEmail.setAttribute("style", "outline-color: red;");
       } else{
         if(texto.length < 5){
           erroEmail.setAttribute("style", "visibility: visible; color: red;");
-          erroEmail.textContent = "* O email precisa ter 5 ou mais caracteres"  
+          erroEmail.textContent = "* O e-mail precisa ter 5 ou mais caracteres!"  
           inputEmail.setAttribute("style", "outline-color: red;");
         }else{
           if (texto.includes("@")) {
@@ -32,7 +32,7 @@ inputEmail.addEventListener("blur", ()=>{
             } else {
               //Campo sem @
               erroEmail.setAttribute("style", "visibility: visible; color: red;");
-              erroEmail.textContent = "* O email precisa ser um email valido (Conter @)" 
+              erroEmail.textContent = "* O e-mail precisa ser um e-mail válido (Conter @)!" 
               inputEmail.setAttribute("style", "outline-color: red;");
             }
         }   
@@ -44,12 +44,12 @@ inputNome.addEventListener("blur", ()=>{
   console.log(texto)
   if (texto == "") {
       erroNome.setAttribute("style", "visibility: visible; color: red;");
-      erroNome.textContent = "* O nome nao pode estar vazio"
+      erroNome.textContent = "* O nome não pode estar vazio!"
       inputNome.setAttribute("style", "outline-color: red;");
     } else{
       if(texto.length < 5){
         erroNome.setAttribute("style", "visibility: visible; color: red;");
-        erroNome.textContent = "* O nome precisa ter 5 ou mais caracteres"  
+        erroNome.textContent = "* O nome precisa ter 5 ou mais caracteres!"  
         inputNome.setAttribute("style", "outline-color: red;");
       }else{
           erroNome.textContent = ""
@@ -64,12 +64,12 @@ inputSobrenome.addEventListener("blur", ()=>{
   console.log(texto)
   if (texto == "") {
     erroSobrenome.setAttribute("style", "visibility: visible; color: red;");
-    erroSobrenome.textContent = "* O sobrenome nao pode estar vazio"
+    erroSobrenome.textContent = "* O sobrenome não pode estar vazio!"
     inputSobrenome.setAttribute("style", "outline-color: red;");
     } else{
       if(texto.length < 5){
         erroSobrenome.setAttribute("style", "visibility: visible; color: red;");
-        erroSobrenome.textContent = "* O sobrenome precisa ter 5 ou mais caracteres"  
+        erroSobrenome.textContent = "* O sobrenome precisa ter 5 ou mais caracteres!"  
         inputSobrenome.setAttribute("style", "outline-color: red;");
       }else{
           erroSobrenome.textContent = ""
@@ -84,7 +84,7 @@ inputSenha.addEventListener("blur", ()=>{
   console.log(texto)
   if (texto == "") {
     erroSenha.setAttribute("style", "visibility: visible; color: red;");
-    erroSenha.textContent = "* A senha nao pode estar vazio"
+    erroSenha.textContent = "* A senha não pode estar vazia!"
     inputSenha.setAttribute("style", "outline-color: red;");
     } else{
       if(texto.length < 5){
@@ -108,7 +108,7 @@ inputSenha2.addEventListener("blur", ()=>{
   }
   else{
     erroSenha2.setAttribute("style", "visibility: visible; color: red;");
-    erroSenha2.textContent = "* As senhas precisam ser iguais"
+    erroSenha2.textContent = "* As senhas precisam ser iguais!"
     inputSenha2.setAttribute("style", "outline-color: red;");
   }
 });
