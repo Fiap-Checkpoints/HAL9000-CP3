@@ -1,3 +1,6 @@
+
+// GRUPO VALIDAÇAO DO FORMULARIO TEXTUAL
+
 const inputNome = document.querySelector("#idNome");
 const inputSobrenome = document.querySelector("#idSobrenome");
 const inputEmail = document.querySelector("#idEmail");
@@ -119,5 +122,35 @@ inputSenha2.addEventListener("blur", ()=>{
     erroSenha2.textContent = "* As senhas precisam ser iguais!"
     alert("As senhas precisam ser iguais!");
     inputSenha2.setAttribute("style", "outline-color: red;");
+  }
+});
+
+
+// GRUPO DARK MODE
+
+const Labeldarkmode = document.querySelectorAll("Label");
+const aDarkmode = document.querySelector("a");
+const CadastroDarkMode = document.querySelector(".form-cadastro");
+const btnDark = document.querySelector("#btnDark");
+const LegendCadastro = document.querySelector(".text-cadastro")
+
+btnDark.addEventListener("click",function(event){
+  event.preventDefault();
+  if(btnDark.textContent == "DarkMode"){
+    btnDark.textContent = "LightMode"
+    CadastroDarkMode.setAttribute("style","background-color:black")
+    LegendCadastro.style.color = "white";
+    aDarkmode.style.color = "white";
+    for (var i = 0; i < Labeldarkmode.length;i++){
+      Labeldarkmode[i].style.color = "white";
+    }
+  }else{
+    btnDark.textContent = "DarkMode"
+    CadastroDarkMode.setAttribute("style","background-color:white")
+    LegendCadastro.style.color = "#002344";
+    aDarkmode.style.color = "#002344";
+    for (var i = 0; i < Labeldarkmode.length;i++){
+      Labeldarkmode[i].style.color = "#002344";
+    }
   }
 });
