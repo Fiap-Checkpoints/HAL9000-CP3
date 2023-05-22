@@ -13,8 +13,6 @@ const erroEmail = document.querySelector("#idErrorEmail");
 const erroSenha = document.querySelector("#idErrorSenha");
 const erroSenha2 = document.querySelector("#idErrorConfirmSenha");
 
-
-
 inputEmail.addEventListener("blur", ()=>{
     let texto = inputEmail.value;
     console.log(texto)
@@ -90,7 +88,6 @@ inputSobrenome.addEventListener("blur", ()=>{
 
 inputSenha.addEventListener("blur", ()=>{
   let texto = inputSenha.value;
-  console.log(texto)
   if (texto == "") {
     erroSenha.setAttribute("style", "visibility: visible; color: red;");
     erroSenha.textContent = "* A senha não pode estar vazia!"
@@ -124,7 +121,6 @@ inputSenha2.addEventListener("blur", ()=>{
     inputSenha2.setAttribute("style", "outline-color: red;");
   }
 });
-
 
 // GRUPO DARK MODE
 
